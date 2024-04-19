@@ -1,0 +1,390 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+span{
+    color: orangered;
+}
+.nav-mobile{
+    display: none;
+}
+.retorno{
+    display: none;
+}
+.open{
+    display: flex;
+    margin-top: 15px;
+    background-color: rgba(245, 223, 162, 0.801);
+    padding: 20px;
+}
+.open ul li{
+    list-style: none;
+}
+.open ul li a{
+    text-decoration: none;
+    display: inline-block;
+    color: red;
+    padding: 5px;
+}
+.open ul li a:hover{
+    color: orangered;
+}
+#btn1{
+    display: none;
+}
+.tentar{
+    display: none;
+}
+header{
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 60px;
+    box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.1);
+    background-color: rgba(245, 223, 162, 0.801);
+}
+header h1{
+    margin-left: 50px;
+    font-size: 25px;
+    margin-top: 15px;
+}
+header .pc ul{
+    display: flex;
+    gap: 30px;
+    margin-right: 40px;
+    margin-top: 15px;
+}
+header .pc ul li{
+    display: inline-block;
+}
+header .pc ul li a{
+    text-decoration: none;
+    color: black;
+}
+header .pc ul li a:hover{
+    color: orangered;
+}
+@keyframes animacao {
+    from{position: relative; top: 0px;}
+    to{position: relative; top: 50px;}
+ }
+ @keyframes animacao2 {
+    from{position: relative; top: 50px;}
+    to{position: relative; top: 0px;}
+ }
+ .segImg
+ {
+    animation: animacao 3s 1s infinite alternate;
+ }
+#inicio{
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(245, 223, 162, 0.801);
+}
+#inicio .primeiro{
+    margin-top: 100px;
+    width: 400px;
+    margin-left: 200px;
+}
+#inicio .primeiro p{
+    font-size: 15px;
+}
+#inicio .primeiro h1{
+    font-size: 40px;
+}
+#inicio .primeiro button{
+    width: 100px;
+    height: 40px;
+    background-color: orangered;
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    cursor: pointer;
+}
+#inicio .segundo{
+    margin-top: 70px;
+    margin-right: 200px;
+    max-width: max-content;
+    border-radius: 50px;
+}
+#inicio .segundo img{
+    width: 200px;
+    border-radius: 50px;
+    height: 300px;
+}
+#sobre{
+    width: 100%;
+    height: 400px;
+    background-color: white; 
+}
+.sobre1{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.sobre1 .codigo1{
+    max-width: max-content;
+    margin-left: 100px;
+    box-shadow: 10px 10px orangered;
+}
+.sobre1 .codigo1 img{
+    width: 200px;
+    height: 300px;
+}
+.sobre1 .codigo2{
+    width: 750px;
+}
+.sobre1 .codigo2{
+    margin-right: 50px;
+}
+.sobre1 .codigo2 h1{
+    font-size: 20px;
+    text-align: justify;
+}
+#contactos{
+    display: flex;
+    justify-content: space-between;
+}
+.sobre1 .btnu{
+    width: 100px;
+    height: 40px;
+    background-color: orangered;
+    border: none;
+    border-radius: 20px;
+    color: #fff;
+    cursor: pointer;
+}
+.btn{
+    background-color: white;
+    border: 1px solid orangered;
+    width: 100px;
+    height: 40px;
+    color: orangered;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+.btn:hover{
+    background-color: orangered;
+    color: #fff;
+    transition: 1s;
+}
+.btnu:hover{
+    background-color: #fff;
+    color: orangered;
+    border: 1px solid orangered;
+    transition: 1s;
+}
+#habilidades{
+    width: 100%;
+    height: 400px;
+    background-color: silver;    
+}
+.habili img{
+    width: 100px;
+    border-radius: 20px;
+}
+#habilidades h1{ 
+    text-align: center;   
+}
+#habilidades .habili{
+    display: flex;
+    justify-content: space-between;
+}
+#habilidades .habili div{
+    background-color: rgba(109, 79, 79, 0.541);
+    width: 350px;
+    height: 200px;
+    text-align: center;
+    padding: 20px;
+    border: 1px solid black;
+    cursor: pointer;
+}
+.p1{
+    margin-left: 20px;
+}
+.p2{
+    margin-right: 20px;
+}
+#habilidades .habili div{
+    animation: animacao 3s 1s infinite alternate;
+ }
+ #habilidades .habili .p3{
+    animation: animacao2 3s 1s infinite alternate;
+ }
+#habilidades .habili div:hover{
+    box-shadow: 10px 10px orangered;
+    transition: 1s;
+    border-color: orangered;
+}
+@media screen and (max-width: 768px){
+    #btn1{
+        display: flex;
+        background-color: transparent;
+        width: 60px;
+        height: 40px;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+    header .pc ul li a{
+        display: none;
+    }
+    header h1{
+        margin-left: 10px;
+        font-size: 15px;
+        margin-top: 15px;
+    }
+    #inicio{
+       flex-direction: column;
+       text-align: center;
+       height: 600px;
+    }
+    #inicio .primeiro{
+        margin-top: 100px;
+        width: 400px;
+        margin-left: none;
+        margin: auto;
+    }
+    #inicio .segundo{
+        margin-top: 70px;
+        margin-right: none;
+        max-width: max-content;
+        border-radius: 50px;
+        margin: auto;
+    }
+    #inicio .segundo img{
+        width: 150px;
+        border-radius: 50px;
+        height: 150px;
+    }
+}
+@media  screen and (max-width: 768px) {
+    #sobre{
+        width: 100%;
+        height: 1100px;
+        background-color: white; 
+        margin: auto;
+    }
+    .sobre1{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        justify-content: space-between;
+        margin: auto;
+    }
+    .sobre1 .codigo1{
+        max-width: max-content;
+        margin-left: none;
+        box-shadow: 10px 10px orangered;
+        margin: auto;
+    }
+    .sobre1 .codigo1 img{
+        width: 200px;
+        height: 300px;
+    }
+    .sobre1 .codigo2{
+        width: 400px;
+        margin: auto;
+        text-align: center;
+    }
+    .sobre1 .codigo2{
+        margin-right: none;
+    }
+    .sobre1 .codigo2 .texto{
+        margin-top: 70px;
+        font-size: 20px;
+        text-align: center;
+    }
+    #contactos{
+        flex-direction: column;
+        margin: auto;
+        text-align: center;
+    }
+    #contactos h1{
+        margin: auto;
+        text-align: center;
+    }
+}
+@media screen and (max-width: 768px){
+    #habilidades{
+        width: 100%;
+        height: 850px;
+        background-color: silver;   
+        margin: auto; 
+    }
+    #habilidades .habili{
+        flex-direction: column;
+        margin: auto;
+    }
+    #habilidades .habili div{
+        margin: auto;
+        margin-bottom: 10px;
+        width: 250px;
+        height: 200px;
+    }
+    .p1{
+        margin-left: none;
+    }
+    .p2{
+        margin-right: none;
+    }
+}
+#ultimo{
+    width: 100%;
+    height: 300px;
+    background-color: black;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+}
+#ultimo .face{
+    width: 300px;
+    margin-left: 50px;
+    margin-top: 20px;
+    text-align: center;
+}
+#ultimo .face div{
+    display: flex;
+    justify-content: space-between;
+}
+#ultimo .face img{
+    width: 30px;
+    border-radius: 50%;
+}
+#ultimo a{
+    text-decoration: none;
+    color: #fff;
+}
+#ultimo a:hover{
+    color: orangered;
+}
+#ultimo .links-uteis{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-right: 300px;
+    margin-top: 20px;
+}
+@media screen and (max-width: 768px) {
+    #ultimo{
+        flex-direction: column;
+        text-align: center;
+        height: 600px;
+    }
+    #ultimo .face{
+        width: 300px;
+        margin-left: 0px;
+        margin-top: 20px;
+        margin: auto;
+    }
+    #ultimo .links-uteis{
+        margin-right: 0px;
+        margin-top: 20px;
+        margin: auto;
+    }
+}
